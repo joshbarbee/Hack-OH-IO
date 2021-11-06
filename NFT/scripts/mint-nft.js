@@ -12,12 +12,13 @@ const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
 
 async function mintNFT(tokenURI){
     const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest")
+    const block = await web3.eth.getBlock('latest')
 
     const tx = {
         'from': PUBLIC_KEY,
         'to': contractAddress,
         'nonce': nonce,
-        'gas': 5000000,
+        'gas': block.minimumGasPrice,
         'data': nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI()
     }
 
