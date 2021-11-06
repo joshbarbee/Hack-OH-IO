@@ -1,0 +1,22 @@
+{
+  "name": "hack-oh-io",
+  "version": "1.0.0",
+  "description": "Temp readme",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshbarbee/Hack-OH-IO.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshbarbee/Hack-OH-IO/issues"
+  },
+  "homepage": "https://github.com/joshbarbee/Hack-OH-IO#readme",
+  "dependencies": {
+    "materialize-css": "^1.0.0"
+  }
+}
