@@ -71,7 +71,7 @@
             </div>
 
             <div class="row">
-                <a href="index.html" class= "btn-large purple waves-effect center-align col s2 offset-s5" >Sign Up</a>
+                <a id = "get_location" href="index.html" class= "btn-large purple waves-effect center-align col s2 offset-s5" >Sign Up</a>
             </div>
             
         </div> 
@@ -88,5 +88,24 @@
          $(document).ready(function(){
              $('.sidenav').sidenav();
          })
+
+         var c = function(pos) {
+            var lat = pos.coords.latitude,
+                long = pos.coords.longitude,
+                coords = lat + ', ' + long;
+                setCookie("loc", coords)
+            
+         }
+
+
+         document.getElementById('get_location').onclick= function(){
+             navigator.geolocation.getCurrentLocation(c);
+             return false;
+         }
+
+        function setCookie(cname, cvalue) {
+                let expires = "expires="+ "18 Dec 2025 12:00:00 UTC";
+                document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/"+"HACK-OH-IO/Web/buy-tix.html";
+        }
      </script>
 </html>

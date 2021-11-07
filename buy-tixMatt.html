@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link REL="SHORTCUT ICON" HREF="data/favicon.ico">
+    </head>
+    
+    <title>Buy Tickets</title>
+    <script defer src = "./script.js"></script>
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     
+    
+    <body>
+
+        <nav class="nav-wraper purple">
+            <div class="container">
+                <a href="#" class="brand-logo">NFTicket</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="buy-tix.html">Buy Tickets</a></li>
+                    <li><a href="sell-tix.html">Sell Tickets</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Profile</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-links">
+            <li><a href="index.html">Home</a></li>
+               <li><a href="buy-tix.html">Buy Tickets</a></li>
+                <li><a href="sell-tix.html">Sell Tickets</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Profile</a></li>
+        </ul>
+
+     </body>
+
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+     <script>
+         $(document).ready(function(){
+             $('.sidenav').sidenav();
+         })
+     </script>
+</html>
