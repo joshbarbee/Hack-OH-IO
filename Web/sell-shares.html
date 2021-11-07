@@ -4,7 +4,7 @@
         <link REL="SHORTCUT ICON" HREF="data/favicon.ico">
     </head>
     
-    <title>Sell Tickets</title>
+    <title>Sell Shares</title>
     <script defer src = "./script.js"></script>
      <!-- Compiled and minified CSS -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -14,15 +14,15 @@
     
     <body>
 
-        <nav class="nav-wraper purple">
+        <nav class="nav-wraper indigo darken-4">
             <div class="container">
-                <a href="#" class="brand-logo">NFTicket</a>
+                <a href="#" class="brand-logo">Barder</a>
                 <a href="#" class="sidenav-trigger" data-target="mobile-links">
                     <i class="material-icons">menu</i>
                 </a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="index.html">Browse</a></li>
-                    <li><a href="sell-tix.html">Sell Tickets</a></li>
+                    <li><a href="sell-shares.html">Sell Shares</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="#">Profile</a></li>
                 </ul>
@@ -31,12 +31,37 @@
 
         <ul class="sidenav" id="mobile-links">
             <li><a href="index.html">Browse</a></li>
-                <li><a href="sell-tix.html">Sell Tickets</a></li>
+                <li><a href="sell-shares.html">Sell Shares</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="#">Profile</a></li>
         </ul>
 
+        <div class="container">
+            <h1></h1>
+            <h4>Please fill out the following fields to sell shares:</h4>
+            <div class="row">
+                <div class="col s6">
+                    <div class="input-field col s10 grey lighten-3">
+                        <input id="artist_sold" type="text" class="validate"/>
+                        <label for="artist_sold">What artist would you like to sell?</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6">
+                    <div class="input-field col s10 grey lighten-3">
+                        <input id="sold_shares" type="text" class="validate"/>
+                        <label for="sold_shares">How many shares would you like to sell?</label>
+                    </div>
+                </div>
+                <div class="col s6">
+                    <a href="#" class= "btn-large green darken-2 waves-effect center-align col s8" >Submit Trade</a>
+                </div>
+            </div>
+        </div>
+
      </body>
+
 
      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Compiled and minified JavaScript -->
